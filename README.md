@@ -1,5 +1,5 @@
 # BirthdayAlarmBot
-## can notify you with a message, when group's member birthday is.
+can notify you with a message, when group's member birthday is.
 
 ## Sceenshots
 ![](demo/demo.gif)
