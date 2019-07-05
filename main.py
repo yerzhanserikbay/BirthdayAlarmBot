@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 
-bot = telebot.TeleBot('789281149:AAEsBcRQLYX5-WMGoUEE9SOZpy0UAHZZtGg')
+bot = telebot.TeleBot('')
 date_text = 'Could you send me your birthday *ONLY* in _month/day/year_ format \nEx: 08/08/08'
 
 
