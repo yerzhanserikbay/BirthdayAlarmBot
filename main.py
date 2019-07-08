@@ -1,9 +1,9 @@
 import telebot
 from datetime import datetime
 import data_manager as dm
+import os
 
-
-bot = telebot.TeleBot(['TOKEN'])
+bot = telebot.TeleBot(os.environ['TOKEN'])
 date_text = 'Could you send me your birthday *ONLY* in _year-month-day_ format \nEx: 1996-08-13'
 
 
