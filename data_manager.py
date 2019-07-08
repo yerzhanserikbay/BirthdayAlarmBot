@@ -36,10 +36,10 @@ def get_elements(sended_id):
     count = 1
 
     for user in users:
-        message += f'-{str(count)}-' + '\n' + 'First Name' + user['first_name']
-        message += '\n' + 'Last Name' + user['last_name']
-        message += '\n' + 'Username' + user['username']
-        message += '\n' + 'Birthday' + user['birthday'] + '\n\n'
+        message += f'-{str(count)}-' + '\n' + 'First Name' + user[0]
+        message += '\n' + 'Last Name' + user[1]
+        message += '\n' + 'Username' + user[2]
+        message += '\n' + 'Birthday' + user[3] + '\n\n'
         count += 1
     return message
 

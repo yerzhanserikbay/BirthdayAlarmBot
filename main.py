@@ -48,7 +48,7 @@ def handle_send(message):
 
 @bot.message_handler(commands=['list'])
 def handle_list(message):
-    msg = dm.get_elements(str(message.chat.id))
+    msg = dm.get_elements(message.chat.id)
     bot.send_chat_action(message.chat.id, 'typing')
     bot.send_message(message.chat.id, 'Trying \U0001F975')
     bot.send_message(message.chat.id, msg)
