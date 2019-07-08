@@ -47,6 +47,3 @@ def check(json_content):
         push(json_content)
     else:
         update(json_content)
-
-
-get("id002")

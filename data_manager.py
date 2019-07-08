@@ -87,8 +87,6 @@ def get_file(sended_id):
 
     workbook.close()
 
-    cwd = os.getcwd()
-
     doc = open('{}/Birthdays.xlsx'.format(cwd), 'rb')
 
     return doc
