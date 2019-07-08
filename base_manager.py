@@ -1,7 +1,7 @@
 import pymongo
 import os
 
-client = pymongo.MongoClient(os.environ['MONGO'])
+client = pymongo.MongoClient('mongodb+srv://yerzhanserikbay:63836383@cluster0-tpjpg.mongodb.net/test?retryWrites=true&w=majority')
 
 db = client.data
 
@@ -28,10 +28,8 @@ def update(json_content):
 
 
 def get(group_id):
-    return db.groups.find_one({'group_id': group_id})['users']
+    return db.groups.find_one({'group_id': str(group_id)})['users']
 
-
-# groups_base = db.groups.find({})
 
 def check(json_content):
     print('checking')

@@ -31,7 +31,7 @@ def insert_element(data):
 
 
 def get_elements(sended_id):
-    users = bm.get(sended_id)
+    users = bm.get(str(sended_id))
     message = ''
     count = 1
 
@@ -90,4 +90,3 @@ def get_file(sended_id):
     doc = open('{}/Birthdays.xlsx'.format(cwd), 'rb')
 
     return doc
-
