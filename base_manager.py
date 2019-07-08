@@ -1,7 +1,7 @@
 import pymongo
+import os
 
-
-client = pymongo.MongoClient(['MONGO'])
+client = pymongo.MongoClient(os.environ['MONGO'])
 
 db = client.data
 
