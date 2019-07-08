@@ -14,7 +14,7 @@ def handle_start(message):
     bot.send_message(message.chat.id, 'Welcome to the BirthdayAlarmBot \U0001F973'
                                       '\n• Add a birthday /add \U0001F389'
                                       '\n• Send me an excel file with birthdays /send \U0001F381'
-                                      '\n• Send me a message with list of the birthdays/list \U0001F605'
+                                      '\n• Send me a message with list of the birthdays /list \U0001F605'
                                       '\n• Force me to sleep /stop \U0001F644')
 
 
